@@ -20,7 +20,9 @@ class CardDeck:
         """
         Fill the deck with cards.
         """
-        for i in range(1, 5):
+        #Ace - King (1- 13)
+        for i in range(1, 14):
+            #Suits (Spades, Hearts, Diamonds, Clubs)
             for j in range(0, 4):
                 tmpCard = Card(i, CardDeck.SuitValues[j])
                 self.deck.append(tmpCard)
@@ -60,14 +62,18 @@ class CardDeck:
         for i in range(0, self.getCardCount()):
             self.deck[i].printCardInfo()
     
-
+#Testing class features
 print("starting")
 testDeck = CardDeck()
-print("obj created")
+print("deck obj created")
+print("cards amount: ", testDeck.getCardCount())
 testDeck.printDeck()
-print("printed deck")
-testDeck.drawCard()
+#print("printed deck")
+card1 = testDeck.drawCard()
 print("drew card")
-testDeck.drawCard()
+card1.printCardInfo()
+card2 = testDeck.drawCard()
 print("drew card")
-testDeck.printDeck()
+card2.printCardInfo()
+#testDeck.printDeck()
+print("cards amount: ", testDeck.getCardCount())
