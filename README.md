@@ -1,2 +1,2 @@
 # Python-Deck-of-Playing-Cards
-##First project using python
+##Classes that represent a standard deck of playing cards.
