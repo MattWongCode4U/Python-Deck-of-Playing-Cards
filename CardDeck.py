@@ -63,12 +63,15 @@ class CardDeck:
             self.deck[i].printCardInfo()
     
 #Testing class features
-print("starting")
+print("starting\n")
 testDeck = CardDeck()
 print("deck obj created")
-print("cards amount: ", testDeck.getCardCount())
+print("card amount in deck: ", testDeck.getCardCount())
+
+print("\nprinting deck: ")
 testDeck.printDeck()
-#print("printed deck")
+print("printed deck\n")
+
 card1 = testDeck.drawCard()
 print("drew card")
 card1.printCardInfo()
@@ -76,4 +79,4 @@ card2 = testDeck.drawCard()
 print("drew card")
 card2.printCardInfo()
 #testDeck.printDeck()
-print("cards amount: ", testDeck.getCardCount())
+print("card amount still in deck: ", testDeck.getCardCount())

@@ -39,6 +39,3 @@ class Card:
         Print value and suit of the card
         """
         print("Card: ", self.value, "-", self.suit)
-        #print("Value: ", self.value, "Suit: ", self.suit)
-        #print("Suit: ", self.suit)
-        #print()
